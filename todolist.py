@@ -84,11 +84,11 @@ class TodoList:
             callback(todo)
 
     def select(self, callback):
-        new_todo_list = TodoList(self.title)
-        for todo in self._todos:
-            if callback(todo):
-                new_todo_list.add(todo)
-        return new_todo_list
+        new_list = TodoList(self.title)
+        for todo in filter(callback, self._todos):
+            new_list.add(todo)
+
+        return new_list
 
 # test cases
 empty_todo_list = TodoList('Nothing Doing')
