@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/todo.py
+src/todolist.py
+src/todolist_hubertls.egg-info/PKG-INFO
+src/todolist_hubertls.egg-info/SOURCES.txt
+src/todolist_hubertls.egg-info/dependency_links.txt
+src/todolist_hubertls.egg-info/top_level.txt
